@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SellerMaster.master.cs" Inherits="eBook.Pages.Admin.Seller.SellerMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Online Book Shop</title>
+    <style>
+        *{
+            font-family: 'Times New Roman';
+        }
+
+        #left{
+            color: white;
+            height: 695px;
+        }
+
+        label{
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="../../Libraries/css/bootstrap.min.css"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <div class="container-fluid">
+       
+        <div class="row">
+            
+            <div class="col-2 bg-dark" id="left">
+            
+                <div style="height:20px">
+
+                </div>
+
+                <div class="p-5">
+                    <div class="mb-3">
+                        <a href="Selling.aspx"><label>Sell</label></a>
+                    </div>
+
+                    <div class="mb-3">
+                        <a href="bill.aspx"><label>Bill</label></a>
+                    </div>
+
+                    <div class="mb-3">
+                        <a href="../LoginPage.aspx"><label>Logout</label></a>
+                    </div>
+                </div>
+       
+            </div>
+
+            <div class="col-10">
+                    <form id="form1" runat="server">
+                        <div>
+                            <asp:ContentPlaceHolder ID="MyContent" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </form>
+             </div>
+        </div>
+    </div>
+
+</body>
+</html>
